@@ -63,6 +63,12 @@ useEffect(()=>{
     </div>
     ))}
   </section>
+
+   <footer>
+     Feito por <b>Felipe Alves </b> <span role="img" aria-label="lingua">😛</span><br/>
+     Direitos de imagem exclusivos da Netflix<br/>
+     Dados fornecidos pela API do site Themoviedb.org
+  </footer>
   
 </div>
 
