@@ -11,8 +11,8 @@
     padding-left: 30px ;
 }
 
-.movieRow--list{
-    width: 9999px;
+.movieRow--list {
+    transition: all ease 0.5s;
 }
 
 .movieRow--item {
