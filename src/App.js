@@ -1,22 +1,30 @@
-import React, {useEffect,useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import Tmdb from './Tmdb';
+import MovieRow from './components/MovieRow.js'
 
 export default () => {
 
   const [movieList, setMovieList] = useState([]);
 
-useEffect(()=>{
+  useEffect(()=>{
   const loadAll = async () => {
     //lista total
     let list = await Tmdb.getHomeList();
-    console.log(list);
     setMovieList(list);
   }
+
   loadAll();
 }, []);
 
   return (
 <div className="page">
+  <section className="lists">
+    {movieList.map((item, key) => (
+      <div>
+   <MovieRow key={key} title={item.title} items={item.items} />
+    </div>
+    ))}
+  </section>
   
 </div>
 
