@@ -70,6 +70,13 @@ useEffect(()=>{
      Dados fornecidos pela API do site Themoviedb.org
   </footer>
   
+
+      {movieList.length <= 0 &&
+      <div className="loading">
+        <img src="https://i.pinimg.com/originals/f9/0f/76/f90f7689233948005f465d98ead56d44.gif" alt="Carregando"/>
+      </div>
+  }
+
 </div>
 
   );
